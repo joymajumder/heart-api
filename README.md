@@ -47,11 +47,6 @@ curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" \
 ```
 
 ## 4. Deploy on Render
-1. Push this repo to GitHub (include `model/heart_model.joblib`).
-2. Render dashboard → New → Web Service → connect the repo.
-3. Language: **Docker**, Root directory: repo root, Dockerfile path: `./Dockerfile`.
-4. Optionally set Health Check Path to `/health`.
-5. Deploy. Live URL: `https://<your-service>.onrender.com` (add yours here).
+5. Deploy. Live URL:(https://dashboard.render.com/web/new)
 
-Test: `curl https://<your-service>.onrender.com/health`
-(Free tier services sleep when idle; the first request may take ~50 s.)
+
